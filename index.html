@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>饭趴,来这！让世界吃你偶像安利！</title>
+    <script>
+        (function () {
+            var location = window.location,
+                hash = location.hash,
+                search = location.search;
+            if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && 
+                !(hash.indexOf('jump') !== -1 || search.indexOf('jump') !== -1)) {
+                var origin = 'http://fanpa.yinyuetai.com/',
+                    roomId = hash.substring(location.hash.lastIndexOf('/') + 1);
+
+                if(location.origin.indexOf('fanpa.m.yinyuetai.com') === -1) {
+                    origin = 'http://fanpa.beta.yinyuetai.com:9091/';
+                }
+
+                if(/#\/detail\//.test(hash)) {
+                    location.href = origin + 'liveroom.html?roomId=' + roomId;
+                } else if (/#\/list\//.test(hash)) {
+                    location.href = origin + 'channellist.html';
+                } else {
+                    location.href = origin;
+                }
+            }
+        })();
+    </script>
+</head>	
+
+<body>
+    <div id="app"></div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.my-center {
+	background-color: #fff;
+	.pic-wrap {
+		text-align: center;
+	}
+	.pic {
+		margin:0.6rem 0 0.4rem;
+		width:2.666667rem;
+		height:2.666667rem;
+		border-radius:50%;
+	}
+	.name {
+		text-align: center;
+		font-size: 0.5rem;
+	}
+	.data-list {
+		@extend .clearfix;
+		font-size: 0.36rem;
+		line-height: 1rem;            
+		margin:0.4rem 1rem;
+	}
+	.item {
+		float:left;
+		width:50%;
+		text-indent:.2rem;
+		span {
+			color:$color;
+		}
+	}
+	.logout-btn {
+		text-align: center;
+		padding-bottom:.6rem;
+	}
+	.btn-primary-logout-big {
+		margin:0.4rem 0;
+	}
+}
+

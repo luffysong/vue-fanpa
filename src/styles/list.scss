@@ -1,0 +1,26 @@
+.list-view {
+	.big-video-item {
+		margin-top:0.4rem;
+		margin-bottom:0.4rem;
+	}
+}
+
+.list-loading-view {
+	margin:0.4rem 0;
+	text-align:center;
+	font-size: 0.4rem;
+	color:#888;
+	.text {
+		margin-left:0.266667rem;
+	}
+}
+
+.mint-spinner-fading-circle {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+
+
+img[lazy=loading] {
+}

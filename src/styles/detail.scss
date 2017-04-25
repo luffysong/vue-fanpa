@@ -1,0 +1,250 @@
+$red: #f5716f;
+
+.user-action {
+	margin:0.133333rem 0;
+	display:-webkit-box;
+	display:-ms-box;
+	display:-moz-box;
+	display:-o-box;
+	display:box;
+	background:#fff;
+	width:10rem;
+	a {
+		display:block;
+		-webkit-box-flex:1;
+		-ms-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+		text-align:center;
+		color:#666;
+		font-size:0.346667rem;
+		padding:0.266667rem 0;
+	}
+
+	span[class^="btn-"] {
+		display:inline-block;
+		text-align:center;
+		width:1.066667rem;
+		height:1.066667rem;
+		background-size:cover;
+	}
+
+	span.btn-chat {
+		background-image: url('../images/btn-chat.png');
+	}
+
+	span.btn-share {
+		background-image: url('../images/btn-share.png');
+	}
+
+	span.btn-top {
+		background-image: url('../images/btn-top.png');
+	}
+
+	span.btn-gift {
+		background-image: url('../images/btn-gift.png');
+	}
+
+	span.btn-praise {
+		background-image: url('../images/btn-praise.png');
+	}
+}
+
+.dialog-gift {
+	display:-webkit-box;
+	display:-moz-box;
+	display:-o-box;
+	display:-ms-box;
+	display:box;
+	width:100%;
+	a {
+		display:block;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		-ms-box-flex:1;
+		box-flex:1;
+		text-align:center;
+		color:#aaa;
+		&.love i {
+			background-image:url('../images/gift-love.png');
+		}
+		&.flower i {
+			background-image:url('../images/gift-flower.png');
+		}
+		&.beer i {
+			background-image:url('../images/gift-beer.png');
+		}
+		&.fireworks i {
+			background-image:url('../images/gift-fireworks.png');
+		}
+		&.clap i {
+			background-image:url('../images/gift-clap.png');
+		}
+	}
+	i {
+		display:inline-block;
+		width:0.933333rem;
+		height:0.933333rem;
+		text-align:center;
+		background-size:cover;
+	}
+	p {
+		margin-top:0.066667rem;
+	}
+}
+
+.chat-view {
+	position:relative;
+	padding:0 0.346667rem;
+	height:4.573333rem;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.chat-list {
+	font-size: 0.346667rem;
+	line-height:0.613333rem;
+	li {
+		padding:0.266667rem 0;
+		border-bottom:1px solid #e3e3e3;
+
+		// position:relative;
+		// padding-right:2.2rem;
+		&:last-child {
+			border-bottom:none;
+		}
+	}
+	.name {
+		color:#8ca7ff;
+	}
+	.red {
+		color:#ff6260;
+	}
+	// .time {
+	// 	position:absolute;
+	// 	right:0;
+	// 	top:0.266667rem;
+	// 	color:#999;
+	// }
+}
+
+.dialog-chat-wrap {
+	padding:0.266667rem;
+	background-color: #f3f3f7;
+	text-align: center;
+}
+
+.chat-input {
+	border:1px solid #c1c1c1;
+	line-height: 0.426667rem;
+	width:6.6rem;
+	padding:0.2rem;
+	font-size: 0.4rem;
+	font-weight:normal;
+	vertical-align:top;
+	border-radius:0.04rem;
+	margin-right:0.133333rem;
+}
+
+.dialog-top {
+	.top-text {
+		font-size:0.4rem;
+		border-bottom:1px   solid #d9d9d9;
+		padding:0.133333rem 0 0.4rem;
+		text-align:center;
+	}
+	.btn-wrap {
+		text-align:center;
+		margin:0.266667rem 0;
+	}
+	.integral {
+		text-align:center;
+		color:#888;
+		em {
+			color:#d35c5c;
+		}
+	}
+}
+
+.share-wrap {
+	display:-webkit-box;
+	display:-moz-box;
+	display:-o-box;
+	display:-ms-box;
+	display:box;
+	width:100%;
+	a {
+		display:block;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		-ms-box-flex:1;
+		box-flex:1;
+		text-align:center;
+		color:#aaa;
+		&.weibo i {
+			background-image:url('../images/share/weibo.png');
+		}
+		&.weixin i {
+			background-image:url('../images/share/weixin.png');
+		}
+		&.pengyouquan i {
+			background-image:url('../images/share/pengyouquan.png');
+		}
+		&.qq i {
+			background-image:url('../images/share/qq.png');
+		}
+		&.qzone i {
+			background-image:url('../images/share/qzone.png');
+		}
+	}
+	i {
+		display:inline-block;
+		width:1.173333rem;
+		height:1.16rem;
+		text-align:center;
+		background-size:cover;
+	}
+	p {
+		margin-top:-0.066667rem;
+	}
+}
+
+.not-data-hint {
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size:0.4rem;
+	color:#888;
+	white-space:nowrap;
+}
+
+.mint-toast.is-placebottom.send-text-tips {
+	bottom:1.6rem;
+	z-index:99999;
+}
+
+.red-color {
+	color:$red;
+}
+
+.video-notice {
+	width:10.0rem;
+	height:3.626667rem;
+	padding-top:2.0rem;
+	background: url("../images/notice-bg.jpg") no-repeat;
+	background-size:cover;
+	text-align:center;
+	span {
+		color:#fff;
+		font-size: 0.4rem;
+	}
+}
+
